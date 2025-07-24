@@ -1,36 +1,6 @@
-local whitelistedUsers = {
-    "Mysteryman1398", -- RuRu
-    "HaHaGetBetterKills", -- RuRu
-    "L30ZE", -- RuRu
-    "Freezm_90", -- RuRu & Sarah
-    "King_manman513", -- Sarah
-    "rackedupkel", -- Kel
-    "un9kel", -- Kel
-    "un9kel2", -- RuRu & Kel
-    "qwiuick", -- RuRu & Kel
-    "Reap_3r9" -- Kel
-}
-
-local function isWhitelisted(username)
-    for _, whitelisted in ipairs(whitelistedUsers) do
-        if username == whitelisted then
-            return true
-        end
-    end
-    return false
-end
-
-local player = game.Players.LocalPlayer
-local username = player.Name
-
-if not isWhitelisted(username) then
-    game.Players.LocalPlayer:Kick("Not Whitelisted.")
-    return
-end
-
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/AOD-RuRu/AoD/refs/heads/main/uiUI", true))()
 
-local window = library:AddWindow("Plantik | By RuRu", {
+local window = library:AddWindow("157 Private", {
     main_color = Color3.fromRGB(0,0,0),
     min_size = Vector2.new(580,630),
     can_resize = false,
@@ -2204,5 +2174,5 @@ end)
 
 local Credits = window:AddTab("Credits")
 
-Credits:AddLabel("Script is made by RuRu").TextSize = 20
-Credits:AddLabel("Any Problems/Questions? -> ruru.902 on Discord").TextSize = 17
+Credits:AddLabel("Script is made by 157 (fail)").TextSize = 20
+Credits:AddLabel("Any Problems/Questions? -> fail.nb on Discord").TextSize = 17
